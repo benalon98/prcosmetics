@@ -27,15 +27,14 @@ const Home = () => {
               <div className="tonni_tm_button">
                 <a className="anchor" href="#news">
                   לחץ לראות את הטיפולים שלנו{" "}
-                  <img className="svg" src="img/svg/arrow-right.svg" alt="" />
+                  <Image
+                    src="/img/svg/arrow-right.svg"
+                    width={10}
+                    height={10}
+                  />
                 </a>
               </div>
             </div>
-          </div>
-          <div className="tonni_tm_down">
-            <a className="anchor" href="#about">
-              <img className="svg" src="img/svg/down_button.svg" alt="" />
-            </a>
           </div>
         </div>
         <div className="play_button">
@@ -48,22 +47,22 @@ const Home = () => {
           <img className="svg anim_circle" src="img/svg/icon5.svg" alt="" />
         </span>
         <span className="shape2">
-          <img className="svg" src="img/svg/icon7.svg" alt="" />
+          <Image src="/img/svg/icon7.svg" width={70} height={70} />
         </span>
         <span className="shape3">
-          <img className="svg" src="img/svg/icon3.svg" alt="" />
+          <Image src="/img/svg/icon3.svg" width={70} height={70} />
         </span>
         <span className="shape4">
-          <img className="svg anim_circle" src="img/svg/icon6.svg" alt="" />
+          <Image src="/img/svg/icon6.svg" width={70} height={70} />
         </span>
         <span className="shape5">
-          <img className="svg" src="img/svg/icon1.svg" alt="" />
+          <Image src="/img/svg/icon1.svg" width={70} height={70} />
         </span>
         <span className="shape6">
-          <img className="svg anim_circle" src="img/svg/icon5.svg" alt="" />
+          <Image src="/img/svg/icon5.svg" width={70} height={70} />
         </span>
         <span className="shape7">
-          <img className="svg" src="img/svg/icon2.svg" alt="" />
+          <Image src="/img/svg/icon2.svg" width={70} height={70} />
         </span>
       </div>
     </div>

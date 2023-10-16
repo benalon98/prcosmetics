@@ -1,7 +1,6 @@
 import Isotope from "isotope-layout";
 import { Fragment, useEffect, useState } from "react";
 import { dataImage } from "../utilits";
-import DetailsPopup from "./popup/DetailsPopup";
 import Videos from "./Videos";
 const Portfolio = () => {
   const [activeDetailsPopup, setActiveDetailsPopup] = useState(false);
@@ -25,10 +24,6 @@ const Portfolio = () => {
   }, []);
   return (
     <Fragment>
-      <DetailsPopup
-        show={activeDetailsPopup}
-        close={() => setActiveDetailsPopup(false)}
-      />
       <div className="tonni_tm_section" id="portfolio">
         <div className="container">
           <div className="tonni_tm_portfolio">
@@ -44,9 +39,6 @@ const Portfolio = () => {
               <div className="container">
                 <Videos youtubeVideoIds={youtubeVideoIds} />
               </div>
-              <span className="shape">
-                <img className="svg" src="img/svg/vector4.svg" alt="" />
-              </span>
             </div>
           </div>
         </div>

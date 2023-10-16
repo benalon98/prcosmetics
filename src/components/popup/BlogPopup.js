@@ -1,3 +1,4 @@
+import Image from "next/image";
 import useClickOutside from "../../useClickOutside";
 
 const BlogPopup = ({ show, close, blogData }) => {
@@ -15,7 +16,13 @@ const BlogPopup = ({ show, close, blogData }) => {
         <div className="description_wrap">
           <div className="news_popup_informations">
             <div className="image">
-              <img src="img/thumbs/4-2.jpg" alt="" />
+              <Image
+                src="/img/thumbs/4-2.jpg"
+                alt=""
+                width={"100%"}
+                height={400}
+                className="svg"
+              />
               <div
                 className="main"
                 data-img-url={blogData && blogData.img}

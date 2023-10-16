@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const About = () => {
   return (
     <div className="tonni_tm_section" id="about">
@@ -9,17 +11,17 @@ const About = () => {
                 <div className="year">
                   <h3>4</h3>
                   <span className="rounded">
-                    <img src="img/about/flower.png" alt="" />
+                    <Image src="/img/about/flower.png" alt="" layout="fill" />
                   </span>
                 </div>
                 <div className="experience">
                   <h3>+</h3>
                   <p>שנות ניסיון</p>
                   <span className="shape">
-                    <img src="img/about/dots.png" alt="" />
+                    <Image src="/img/about/dots.png" alt="" layout="fill" />
                   </span>
                   <span className="circle_shape">
-                    <img className="svg" src="img/svg/icon1.svg" alt="" />
+                    <Image src="/img/svg/icon1.svg" alt="" layout="fill" />
                   </span>
                 </div>
               </div>

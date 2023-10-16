@@ -1,3 +1,4 @@
+import Image from "next/image";
 import useClickOutside from "../../useClickOutside";
 
 const ContactPopup = ({ show, close }) => {
@@ -31,6 +32,7 @@ const ContactPopup = ({ show, close }) => {
                     marginHeight={0}
                     marginWidth={0}
                   />
+
                   <a href="https://www.embedgooglemap.net/blog/divi-discount-code-elegant-themes-coupon" />
                   <br />
                   <style
@@ -87,7 +89,13 @@ const ContactPopup = ({ show, close }) => {
                 <div className="tonni_tm_button">
                   <a id="send_message" href="#">
                     שלח{" "}
-                    <img className="svg" src="img/svg/arrow-right.svg" alt="" />
+                    <Image
+                      src="/img/svg/arrow-right.svg"
+                      alt=""
+                      width={10}
+                      height={10}
+                      className="svg"
+                    />
                   </a>
                 </div>
                 {/* If you want to change mail address to yours, please open modal.php and go to line 4 */}

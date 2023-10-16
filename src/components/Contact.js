@@ -1,6 +1,7 @@
 import { Fragment, useState } from "react";
 import Counter from "./Counter";
 import ContactPopup from "./popup/ContactPopup";
+import Image from "next/image";
 
 const Contact = () => {
   const [active, setActive] = useState(false);
@@ -70,7 +71,12 @@ const Contact = () => {
                   <a href="mailto:Polinaraishevich@gmail.com">
                     Polinaraishevich@gmail.com{" "}
                   </a>
-                  <img className="svg" src="img/svg/vector3.svg" alt="" />
+                  <Image
+                    src="/img/svg/vector3.svg"
+                    alt=""
+                    width={32}
+                    height={32}
+                  />
                 </span>
               </div>
               <div className="right">
@@ -78,20 +84,22 @@ const Contact = () => {
                   <ul>
                     <li>
                       <a href="https://www.facebook.com/profile.php?id=61550588790705&mibextid=ZbWKwL">
-                        <img
-                          className="svg"
-                          src="img/svg/social/facebook-stroke.svg"
+                        <Image
+                          src="/img/svg/social/facebook-stroke.svg"
                           alt=""
+                          width={30}
+                          height={30}
                         />
                       </a>
                     </li>
 
                     <li>
                       <a href="https://instagram.com/polinaray_8?utm_source=qr&igshid=MzNlNGNkZWQ4Mg==">
-                        <img
-                          className="svg"
-                          src="img/svg/social/instagram-stroke.svg"
+                        <Image
+                          src="/img/svg/social/instagram-stroke.svg"
                           alt=""
+                          width={30}
+                          height={30}
                         />
                       </a>
                     </li>
@@ -114,10 +122,10 @@ const Contact = () => {
             </div>
           </div>
           <span className="shape">
-            <img className="svg" src="img/svg/vector.svg" alt="" />
+            <Image src="/img/svg/vector.svg" alt="" width={900} height={900} />
           </span>
           <span className="shape2">
-            <img className="svg" src="img/svg/vector2.svg" alt="" />
+            <Image src="/img/svg/vector2.svg" alt="" width={280} height={280} />
           </span>
         </div>
       </div>
