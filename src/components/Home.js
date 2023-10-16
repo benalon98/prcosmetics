@@ -9,8 +9,8 @@ const Home = () => {
             <Image
               src="/img/hero/1.png"
               alt="Description of the image"
-              width={1920} // Specify the desired width
-              height={1080} // Specify the desired height
+              layout="fill"
+              sizes="100vw"
             />
           </div>{" "}
           <div className="overlay" />
