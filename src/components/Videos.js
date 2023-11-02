@@ -17,6 +17,7 @@ const Videos = ({ youtubeVideoIds }) => {
     slidesToScroll: 1,
     autoplay: autoplay,
     autoplaySpeed: 5000,
+
     beforeChange: (current, next) => {
       // Pause autoplay when the slide changes
       if (autoplay) {
@@ -37,6 +38,7 @@ const Videos = ({ youtubeVideoIds }) => {
       {youtubeVideoIds.map((videoId, index) => (
         <div key={videoId} className="video-container">
           <YouTube
+            style={{ padding: "30px" }}
             videoId={videoId}
             onPlay={() => {
               // Pause autoplay when the video is played

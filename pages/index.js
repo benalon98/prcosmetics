@@ -10,6 +10,7 @@ import MobileMenu from "../src/layout/MobileMenu";
 import Mouse from "../src/layout/Mouse";
 import PogressBar from "../src/layout/PogressBar";
 import { activeSkillProgress } from "../src/utilits";
+import Certificates from "../src/components/Certificates";
 const Portfolio = dynamic(() => import("../src/components/Portfolio"), {
   ssr: false,
 });
@@ -25,6 +26,7 @@ const Index = () => {
       <Header />
       <Home />
       {/* /HERO */}
+      <Certificates />
       {/* ABOUT */}
       <About />
       {/* /ABOUT */}

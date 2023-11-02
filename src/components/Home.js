@@ -7,7 +7,7 @@ const Home = () => {
         <div className="background">
           <div className="image fadeIn">
             <Image
-              src="/img/hero/1.png"
+              src="/img/hero/1c.png"
               alt="Description of the image"
               layout="fill"
               sizes="100vw"
@@ -19,11 +19,27 @@ const Home = () => {
           <div className="content">
             <div className="content_in">
               <h3 className="name">
-                <span>היי</span> אני
-                <br />
-                פולינה.
+                <span>קצת</span> עליי
               </h3>
-              <span className="welcome">ברוכים הבאים לקליניקה שלי</span>
+              <span className="welcome">
+                {" "}
+                עבורי, להיות קוסמטיקאית זה לא רק לעשות טיפולים ולהתעסק עם
+                מוצרים.
+                <br />
+                אני מאמינה שזה נותן לי הזדמנות ליצור אינטראקציה מיוחדת עם כל אחת
+                <br />
+                מהלקוחות שלי.
+                <br /> המטרה שלי היא לשפר את העור שלך ולעזור לך להרגיש יפה
+                <br /> מבחוץ ושלווה מבפנים.
+                <br /> אני מאמינה שיופי מתחיל בהרמוניה פנימית ולכן אני משקיעה
+                <br />
+                בחיבור אישי איתך,
+                <br /> תוך התחשבות
+                <br /> במצבך הרגשי והפיזי. <br />
+                כשאת מגיעה אלי להליך, זה הזמן שלך להתפנק!
+                <br /> והמטרה שלי היא ליצור אווירה נעימה
+                <br /> ורגועה שבה תוכלי להירגע לחלוטין.
+              </span>
               <div className="tonni_tm_button">
                 <a className="anchor" href="#news">
                   לחץ לראות את הטיפולים שלנו{" "}
@@ -43,27 +59,6 @@ const Home = () => {
             href="//www.youtube.com/embed/d5a69220ohc?autoplay=1"
           />
         </div>
-        <span className="shape1">
-          <img className="svg anim_circle" src="img/svg/icon5.svg" alt="" />
-        </span>
-        <span className="shape2">
-          <Image src="/img/svg/icon7.svg" width={70} height={70} />
-        </span>
-        <span className="shape3">
-          <Image src="/img/svg/icon3.svg" width={70} height={70} />
-        </span>
-        <span className="shape4">
-          <Image src="/img/svg/icon6.svg" width={70} height={70} />
-        </span>
-        <span className="shape5">
-          <Image src="/img/svg/icon1.svg" width={70} height={70} />
-        </span>
-        <span className="shape6">
-          <Image src="/img/svg/icon5.svg" width={70} height={70} />
-        </span>
-        <span className="shape7">
-          <Image src="/img/svg/icon2.svg" width={70} height={70} />
-        </span>
       </div>
     </div>
   );

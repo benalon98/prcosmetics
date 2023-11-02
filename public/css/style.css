@@ -538,7 +538,14 @@ h6 {
 }
 @media screen and (max-width: 868px) {
   .tonni_tm_hero .background .image {
-    display: none;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
   }
 }
 .tonni_tm_hero .background .overlay {
@@ -557,7 +564,6 @@ h6 {
 .tonni_tm_hero .content {
   width: 100%;
   height: 100vh;
-  float: left;
   position: relative;
 }
 .tonni_tm_hero .content_in {
@@ -575,9 +581,11 @@ h6 {
 }
 .tonni_tm_hero .welcome {
   display: inline-block;
-  font-size: 18px;
+  font-size: 28px;
   text-transform: uppercase;
   position: relative;
+  color: "#E9C9B9";
+
   margin-bottom: 60px;
 }
 .tonni_tm_hero .welcome:before {
@@ -585,10 +593,9 @@ h6 {
   content: "";
   width: 70px;
   height: 2px;
-  background-color: var(--extra-color);
-  right: 100%;
   margin-right: 2px;
   bottom: 9px;
+  color: "#E9C9B9";
 }
 .tonni_tm_button {
   width: 100%;
@@ -599,7 +606,7 @@ h6 {
 .tonni_tm_button a {
   font-family: var(--font-family-extra);
   font-weight: 700;
-  color: #000;
+  color: #fff;
 
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
@@ -792,7 +799,7 @@ h6 {
   position: relative;
 }
 .tonni_tm_about .year h3 {
-  font-size: 440px;
+  font-size: 140px;
   font-weight: 700;
   letter-spacing: -20px;
   background-clip: text;
@@ -834,7 +841,7 @@ h6 {
 }
 .tonni_tm_about .experience {
   text-align: center;
-  margin-right: -35px;
+  margin-right: -15px;
   position: relative;
 }
 .tonni_tm_about .experience h3 {
@@ -2249,7 +2256,7 @@ h6 {
   margin: 0px 0px 30px 0px;
   float: left;
   padding-left: 30px;
-  width: 20%;
+  width: 25%;
 }
 .tonni_tm_news .news_list ul li .list_inner {
   width: 100%;
@@ -2574,6 +2581,13 @@ h6 {
   position: relative;
   z-index: 1;
 }
+.certificates {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  margin-top: 16rem;
+}
+
 .tonni_tm_counter_list ul {
   margin: 0px 0px 0px -50px;
   list-style-type: none;
@@ -3132,9 +3146,11 @@ h6 {
   }
   .tonni_tm_hero .welcome {
     font-size: 17px;
+    color: "#E9C9B9";
   }
   .tonni_tm_hero .welcome {
     margin-bottom: 45px;
+    color: "#E9C9B9";
   }
   .tonni_tm_down svg {
     width: 45px !important;
@@ -3451,6 +3467,7 @@ h6 {
   }
   .tonni_tm_hero .welcome {
     font-size: 16px;
+    color: "#E9C9B9";
   }
   .tonni_tm_down svg {
     width: 30px !important;
@@ -3470,7 +3487,7 @@ h6 {
     display: none;
   }
   .tonni_tm_about .year h3 {
-    font-size: 200px;
+    font-size: 20vw;
     line-height: 150px;
     letter-spacing: 0px;
   }
@@ -3589,6 +3606,12 @@ h6 {
     margin-bottom: 45px;
   }
 }
+.welcome {
+  color: "#E9C9B9";
+}
+.anchor {
+  color: white;
+}
 @media (max-width: 768px) {
   .tonni_tm_hero .name {
     font-size: 55px;
@@ -3596,9 +3619,12 @@ h6 {
   .tonni_tm_hero .welcome {
     font-size: 14px;
     margin-bottom: 40px;
+    color: "#E9C9B9";
   }
+
   .tonni_tm_hero .welcome:before {
     width: 40px;
+    color: "#E9C9B9";
   }
   .tonni_tm_about .right .title h3 {
     font-size: 30px;
